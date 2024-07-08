@@ -1,92 +1,159 @@
-# delegates-and-lambdas
+# Delegates and Lambdas
 
+Intermediate level task for practice delegates and lambdas. 
 
+Estimated time to complete the task - 2h.  
 
-## Getting started
+The task requires .NET 6 SDK installed.   
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Task Description
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+The task has 7 sub-tasks. Each sub-task is a small coding exercise.
 
-## Add your files
+<details>
+<summary>
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+**Sub-task #1**
 
-```
-cd existing_repo
-git remote add origin https://autocode.git.epam.com/dotnet-tasks/dotnet/net8/delegates-and-lambdas.git
-git branch -M main
-git push -uf origin main
-```
+</summary>
+      
+- Open the [FunctionExtensions.cs](Delegates/FunctionExtensions.cs) file.
 
-## Integrate with your tools
+- Implement a generic `GenerateProgression` method that generates a sequence of the elements of type `T` using the following recurrent formula: 
 
-- [ ] [Set up project integrations](https://autocode.git.epam.com/dotnet-tasks/dotnet/net8/delegates-and-lambdas/-/settings/integrations)
+   $`x_1=a, x_{n+1}=f(x_n), n = 1, 2, ...`$
 
-## Collaborate with your team
+   The count of requested elements is defined by the given number.
+  
+- [Arithmetic](https://www.wikiwand.com/en/Arithmetic_progression) and [geometric](https://www.wikiwand.com/en/Geometric_progression) progressions are used as test sequences.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+</details>
 
-## Test and Deploy
+<details>
+<summary>
 
-Use the built-in continuous integration in GitLab.
+**Sub-task #2**
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+</summary>
 
-***
+- Open the [FunctionExtensions.cs](Delegates/FunctionExtensions.cs) file.
 
-# Editing this README
+- Implement a generic `GenerateProgression` method which generates a sequence of the elements of type `T` using the following recurrent formula: 
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+   $`x_1=a, x_{n+1}=f(x_n), n = 1, 2, ...`$
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+   The count of requested elements is defined by the condition.
 
-## Name
-Choose a self-explaining name for your project.
+- [Arithmetic](https://www.wikiwand.com/en/Arithmetic_progression) and [geometric](https://www.wikiwand.com/en/Geometric_progression) progressions are used as test sequences.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+</details>
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+<details>
+<summary>
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+**Sub-task #3**
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+</summary>
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+- Open the [FunctionExtensions.cs](Delegates/FunctionExtensions.cs) file.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+- Implement a generic `GetElement` method which generates a `n`s element of the sequence using the following recurrent formula: 
+   
+   $`x_1=a, x_{n+1}=f(x_n), n = 1, 2, ...`$
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- [Arithmetic](https://www.wikiwand.com/en/Arithmetic_progression) and [geometric](https://www.wikiwand.com/en/Geometric_progression) progressions are used as test sequences.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+</details>
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+<details>
+<summary>
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+**Sub-task #4**
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+</summary>
 
-## License
-For open source projects, say how it is licensed.
+- Open the [FunctionExtensions.cs](Delegates/FunctionExtensions.cs) file.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+- Implement a generic `Calculate` method which calculates a `value` as a composition of sequentially executed binary operation $`operation(x, y)`$ on the elements of the sequence by the rule:
+
+   $`value = operation(x_1, x_2)`$, $`value = operation(value, x_3)`$,  ... , $`value = operation(value, x_n)`$
+
+- The elements of the sequence are generated by recurrent formula: 
+   
+   $`x_1=a, x_{n+1}=f(x_n), n = 1, 2, ...`$
+
+   The count of requested elements for the calculation is defined by the given number.
+
+- [Arithmetic](https://www.wikiwand.com/en/Arithmetic_progression) and [geometric](https://www.wikiwand.com/en/Geometric_progression) progressions are used as test sequences.
+
+- Multiplication and addition operations are used as test operations.
+
+</details>
+
+<details>
+<summary>
+
+**Sub-task #5**
+
+</summary>
+
+- Open the [FunctionExtensions.cs](Delegates/FunctionExtensions.cs) file.
+
+- Implement a generic `GenerateSequence` method which generates a sequence of the elements of type `T` using the following recurrent formula: 
+
+   $`x_1 = a, x_2 = b, x_{n+1}=f(x_n, x_{n - 1}), n = 2, 3, ...`$
+
+   The count of requested elements is defined by the given number.
+     
+- The following sequences are used as test sequences.
+
+   $`x_1 = 1, x_2 = 1, x_{n + 1} = x_n +  x_{n - 1}, n = 2, 3, ...`$, where `T` - integer type;     
+   $`x_1 = 1, x_2 = 2, x_{n + 1} = 6 x_n - 8 x_{n - 1}, n = 2, 3, ...`$, where `T` - integer type;    
+   $`x_1 = 1, x_2 = 2, x_{n + 1} = x_n +  x_{n - 1} / x_{n}, n = 2, 3, ...`$, where `T` - real type.
+
+</details>
+
+<details>
+<summary>
+
+**Sub-task #6**
+
+</summary>
+
+- Open the [FunctionExtensions.cs](Delegates/FunctionExtensions.cs) file.
+
+- Implement the generic `FindMax` method which finds maximum from two elements of the type `T` according to comparer logic.
+
+</details>
+
+<details>
+<summary>
+
+**Sub-task #7**
+
+</summary>
+
+- Open the [FunctionExtensions.cs](Delegates/FunctionExtensions.cs) file.
+
+- Implement the generic `CombinePredicates` method which allows to combine several predicate conditions using the logical AND operation (&&).
+
+</details>
+
+The detailed explanations of the task are provided in the XML-comments for the methods and in test cases of unit tests.
+
+## Task Checklist
+
+* Build a solution in [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2019). Make sure there are **no compiler errors and warnings**, fix these issues and rebuild the solution. 
+* Run all unit tests with [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019) and make sure there are **no failed unit tests**. Fix your code to [make all tests GREEN](https://stackoverflow.com/questions/276813/what-is-red-green-testing). 
+* Review all your changes in the codebase **before** [staging the changes and creating a commit](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits?view=azure-devops&tabs=visual-studio). 
+* [Stage your changes, create a commit](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits?view=azure-devops&tabs=visual-studio), and publish your changes to the remote repository. 
+
+## See also
+
+- [Delegates (C# Programming Guide)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/ms173171(v=vs.100))
+- [Using Delegates (C# Programming Guide)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/using-delegates )
+- [How to declare, instantiate, and use a Delegate (C# Programming Guide)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate)
+- [Generic Delegates (C# Programming Guide)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/generic-delegates)
+- [Strongly Typed Delegates](https://learn.microsoft.com/en-us/dotnet/csharp/delegates-strongly-typed)
+- [Comparison<T> Delegate](https://learn.microsoft.com/en-us/dotnet/api/system.comparison-1?view=net-7.0)
+- [Lambda expressions (C# reference)](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions)
