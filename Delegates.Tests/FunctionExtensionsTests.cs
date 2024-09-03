@@ -27,8 +27,13 @@ public class FunctionExtensionsTests
     {
         Assert.That(
             expected,
-            Is.EqualTo(GenerateProgression(first, formula, count))
-                .Using<double>((x, y) => Math.Abs(y - x) > DataSourceForTests.Accuracy));
+            Is.EqualTo(GenerateProgression(first, formula, count).ToList()).Using<double>(
+                Comparer<double>.Create(
+                    (x, y) => Math.Abs(y - x) > DataSourceForTests.Accuracy
+                        ? 1
+                        : Math.Abs(x - y) > DataSourceForTests.Accuracy
+                            ? -1
+                            : 0)));
     }
 
     [Test]
@@ -71,8 +76,13 @@ public class FunctionExtensionsTests
     {
         Assert.That(
             expected,
-            Is.EqualTo(GenerateProgression(first, formula, finished))
-                .Using<double>((x, y) => Math.Abs(y - x) > DataSourceForTests.Accuracy));
+            Is.EqualTo(GenerateProgression(first, formula, finished)).Using<double>(
+                Comparer<double>.Create(
+                    (x, y) => Math.Abs(y - x) > DataSourceForTests.Accuracy
+                        ? 1
+                        : Math.Abs(x - y) > DataSourceForTests.Accuracy
+                            ? -1
+                            : 0)));
     }
 
     [Test]
@@ -142,7 +152,13 @@ public class FunctionExtensionsTests
         Assert.That(
             expected,
             Is.EqualTo(GenerateSequence(1, 2, formula, count))
-                .Using<double>((x, y) => Math.Abs(y - x) > DataSourceForTests.Accuracy));
+                .Using<double>(
+                    Comparer<double>.Create(
+                        (x, y) => Math.Abs(y - x) > DataSourceForTests.Accuracy
+                            ? 1
+                            : Math.Abs(x - y) > DataSourceForTests.Accuracy
+                                ? -1
+                                : 0)));
     }
 
     [Test]
@@ -238,7 +254,9 @@ public class FunctionExtensionsTests
         int count,
         double expected)
     {
-        Assert.That(expected, Is.EqualTo(Calculate(first, formula, operation, count)).Within(DataSourceForTests.Accuracy));
+        Assert.That(
+            expected,
+            Is.EqualTo(Calculate(first, formula, operation, count)).Within(DataSourceForTests.Accuracy));
     }
 
     [Test]

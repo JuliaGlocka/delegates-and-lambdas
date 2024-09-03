@@ -457,12 +457,12 @@ public sealed class DataSourceForTests
                 "Four",
                 "four",
                 new Comparison<string>((a, b) => string.Compare(a, b, StringComparison.Ordinal)),
-                "Four");
+                "four");
             yield return new TestCaseData(
                 "Four",
                 "four",
-                new Comparison<string>((a, b) => string.Compare(a, b, StringComparison.Ordinal)),
-                "four");
+                new Comparison<string>((a, b) => string.Compare(a, b, StringComparison.InvariantCulture)),
+                "Four");
         }
     }
 
