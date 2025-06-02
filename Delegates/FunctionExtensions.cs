@@ -6,8 +6,7 @@ public static class FunctionExtensions
 {
     public static IEnumerable<T> GenerateProgression<T>(T first, Func<T, T>? formula, int count)
     {
-        if (count <= 0)
-            throw new ArgumentOutOfRangeException(nameof(count));
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(count, nameof(count));
         if (formula == null)
             throw new ArgumentNullException(nameof(formula));
 
@@ -47,8 +46,7 @@ public static class FunctionExtensions
 
     public static T GetElement<T>(T first, Func<T, T>? formula, int number)
     {
-        if (number <= 0)
-            throw new ArgumentOutOfRangeException(nameof(number));
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(number, nameof(number));
         if (formula == null)
             throw new ArgumentNullException(nameof(formula));
 
@@ -62,8 +60,7 @@ public static class FunctionExtensions
 
     public static T Calculate<T>(T first, Func<T, T>? formula, Func<T, T, T>? operation, int count)
     {
-        if (count <= 0)
-            throw new ArgumentOutOfRangeException(nameof(count));
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(count, nameof(count));
         if (formula == null)
             throw new ArgumentNullException(nameof(formula));
         if (operation == null)
@@ -81,8 +78,7 @@ public static class FunctionExtensions
 
     public static IEnumerable<T> GenerateSequence<T>(T first, T second, Func<T, T, T>? formula, int count)
     {
-        if (count <= 0)
-            throw new ArgumentOutOfRangeException(nameof(count));
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(count, nameof(count));
         if (formula == null)
             throw new ArgumentNullException(nameof(formula));
 
